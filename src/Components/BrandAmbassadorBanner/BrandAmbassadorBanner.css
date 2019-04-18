@@ -1,0 +1,54 @@
+img {
+    margin: 0 auto;
+}
+
+.slide::before {
+    content: '';
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 65px;
+    bottom: 0;
+    left: 0;
+}
+
+.mobile, .desktop {
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+.carousel-control  {
+    display: none;
+}
+
+.carousel-indicators {
+    display: none;
+}
+
+@media(min-width: 700px) {
+    .mobile {
+      display: none;
+    }
+  }
+
+  @media(max-width: 700px) {
+    .desktop {
+      display: none;
+    }
+  }
+
+  .carouselContainer {
+      z-index: 5 !important;
+      position: relative;
+  }
+
+
+
+
+  .slide {
+      max-width: 100%;
+      height: 960px;
+  }
+
+  
+

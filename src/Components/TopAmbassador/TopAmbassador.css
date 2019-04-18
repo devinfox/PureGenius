@@ -1,0 +1,97 @@
+.video {
+    display: block;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+    position: relative;
+ }
+ 
+ .video iframe {
+     position: absolute;
+     width: 100%;
+     height: 100%;
+ }
+ 
+ iframe {
+     width: 120vh;
+     height: 67vh;
+ }
+
+ .image {
+    max-width: 50vw;
+    max-height: 50vw;
+}
+
+
+
+@media (min-width: 768px) {
+ .flex-container {
+    display: flex;
+    align-content: center;
+    margin: auto;
+    flex-wrap: wrap;
+    padding: 35px 0 35px;
+}
+
+.ambassadorHeader {
+    padding-bottom: 3%;
+    text-align: center;
+    margin: auto;
+}
+
+.amHeader {
+    align-content: center;
+    margin: auto;
+}
+
+.ambassador-container {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.imgTxtContainer {
+    flex-wrap: nowrap !important;
+    display: flex;
+    padding-bottom: 35px;
+    width: 100%;
+}
+
+
+.am-text {
+    margin: auto;
+}
+
+.name { 
+    order: 2;
+}
+
+.bio {
+
+color: #2d2d32;
+font-family: "Gill Sans";
+font-size: 15px;
+font-weight: 100;
+letter-spacing: 1.6px;
+}
+
+.bio, .name { 
+    flex: 1;
+    
+}
+}
+
+
+@media (max-width: 768px) {
+ 
+    .flex-container {
+        flex-direction: column-reverse;
+    } 
+
+    .image {
+        width: 100vw;
+      
+    }
+   
+} 

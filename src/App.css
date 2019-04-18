@@ -1,5 +1,12 @@
+@font-face{
+  font-family: Gill Sans;
+  src: url('./GillSans.ttc') format('truetype');
+}
+
 .App {
   text-align: center;
+  font-family: Gill Sans;
+
 }
 
 .App-logo {
@@ -22,6 +29,12 @@
   color: #61dafb;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -29,4 +42,8 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.footer {
+  margin: 100vh;
 }

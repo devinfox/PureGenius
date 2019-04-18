@@ -1,0 +1,32 @@
+.ambassadorContainer {
+    margin: 0 auto;
+}
+
+
+
+
+@media (min-width: 768px) {
+ 
+    .topContainer {
+        padding-top: 60%;
+    }    
+    
+} 
+
+
+@media (max-width: 768px) {
+ 
+    .topContainer {
+        padding-top: 70%;
+    }    
+    
+} 
+
+
+@media (max-width: 700px) {
+ 
+    .topContainer {
+        padding-top: 118%;
+    }    
+    
+} 

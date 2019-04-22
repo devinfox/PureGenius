@@ -21,7 +21,7 @@ body {
 #signUpContainer {
 	width: 300px;
 	margin: 50px auto;
-    background-color: #FFFFFF;
+    background-color: rgb(255, 255, 255, .75);
     border-radius: 15px;
 }
 
@@ -105,9 +105,8 @@ body {
 
 .signUpRow button {
 	width: 70%;
-	height: 40px;
-
-	
+    height: 40px;
+    border: 1px black solid;
   -webkit-transition: border 0.2s linear, box-shadow 0.2s linear, background-color .35s ease;
 	background-color: transparent;
 	font-size: 18px;

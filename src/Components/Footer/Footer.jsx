@@ -18,7 +18,7 @@ class Footer extends React.Component {
     <div className="footer-container">
     <div className="push"></div>
     <footer className={this.props.location === "/" ? 'purple' : 'white'}>
-    <ul>
+    <ul style={{paddingLeft: "0px"}}>
         <li>Home</li>
         <li>Top Ambassadors</li>
         <li>Support</li>

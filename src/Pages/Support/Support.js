@@ -5,7 +5,7 @@ import SupportText from '../../Components/SupportText/SupportText';
 
 
 
-const Brand_Ambassador = props => (
+const Support = props => (
     <div className="ambassadorContainer">
 
     <div className="banner">
@@ -26,4 +26,4 @@ const Brand_Ambassador = props => (
     </div>
 );
 
-export default Brand_Ambassador;
+export default Support;

@@ -1,70 +1,71 @@
-$main-bg: #dfe6e9;
-$purple: #5D9CEC;
-$deep-purple: darken(#5D9CEC, 10%);
-$light-green: #55efc4;
-
-// Basic Styling
-body {
-	font-family: 'Open Sans', sans-serif;
-	margin: 0;
-	padding: 0;
-	background-color: white;
-}
-ul {
-	margin: 0;
-	padding: 1em;
-	li {
-		list-style: none;
-		a {
-			padding: 1em;
-			color: white;
-			text-decoration: none;
-			-webkit-transition: background-color .5s;
-			-o-transition: background-color .5s;
-			transition: background-color .5s, color .5s;
-			&:hover {
-				background-color: white;
-				color: white;
-			}
-			.contact {
-				border: 1px solid white;
-			}
-		}
-	}
+.NavBar {
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    height: 65px;
+    font-family: Avenir;
+    max-width: 100%;
+    z-index:1000;
+    background: white;
 }
 
-.nav {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	background: white;;
-	color: white;
-	.slam-left {
-		margin-right: auto;
-	}
+.NavBar_navigation {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    padding: 0 5rem;
+    
+}
+.NavBar_Logo a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    
 }
 
-@media all and (max-width: 500px) {
-	ul {
-		padding: 0;
-		li {
-			width: 100%;
-			a {
-				display: block;
-				text-align: center;
-			}
-		}
-	}
-	.nav {
-		-webkit-box-orient: vertical;
-		-webkit-box-direction: normal;
-		    -ms-flex-direction: column;
-		        flex-direction: column;
-		-webkit-box-align: center;
-		    -ms-flex-align: center;
-		        align-items: center;
-		.slam-left {
-			margin-right: 0;
-		}
-	}
+.NavBar_Logo img {
+    max-width: 150px;
 }
+
+.NavBar_items UL {
+   list-style: none;
+   margin: 0;
+   padding: 0;
+   display: flex;
+}
+ 
+.spacer {
+    flex: 1;
+}
+
+.NavBar_items li {
+    padding: 0 3rem;
+}
+
+.NavBar_items a {
+    color: #cd2771;
+    text-decoration: none;
+}
+
+.NavBar_navigation a:hover,
+.NavBar_items a:active {
+ color: silver;
+}
+
+.NavBar_navigation {
+    align-content: center;
+    text-align: center;
+}
+
+@media(max-width: 700px) {
+    .logo-mobile {
+      text-align: center;
+    }
+    .NavBar_Logo {
+        display: inline-block;
+    }
+    .NavBar_items li {
+        padding: 0 1rem;
+    }
+  }

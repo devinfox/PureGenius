@@ -1,3 +1,5 @@
+
+
 .video {
     display: block;
     width: 100%;
@@ -31,6 +33,7 @@
     margin: auto;
     flex-wrap: wrap;
     padding: 35px 0 35px;
+    border-bottom: 1px solid #ce1361 !important;
 }
 
 .ambassadorHeader {
@@ -67,6 +70,14 @@
     order: 2;
 }
 
+button {
+    color: #2d2d32;
+font-family: "Gill Sans";
+font-size: 15px;
+font-weight: 100;
+letter-spacing: 1.6px;
+}
+
 .bio {
 
 color: #2d2d32;
@@ -88,10 +99,5 @@ letter-spacing: 1.6px;
     .flex-container {
         flex-direction: column-reverse;
     } 
-
-    .image {
-        width: 100vw;
-      
-    }
    
 } 

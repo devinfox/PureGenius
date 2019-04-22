@@ -1,0 +1,35 @@
+.carousel .slider-wrapper.axis-horizontal .slider .slide {
+  background: white;
+}
+
+::before {
+  display: none;
+}
+
+.carousel .slide .legend {
+  color: black !important;
+  border-radius: 0 !important;
+  margin-left: -37.5% !important;
+  width: 25% !important;
+  bottom: 33% !important;
+  background: white !important;
+  border: 1px solid black;
+}
+
+.legend .mobile {
+
+  margin-left: -39.5% !important;
+
+}
+
+@media(max-width: 1018px) {
+  .desktopHomepage {
+    display: none;
+  }
+}
+
+@media(min-width: 1018px) {
+  .desktopMobile {
+    display: none;
+  }
+}

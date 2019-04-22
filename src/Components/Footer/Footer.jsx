@@ -20,12 +20,9 @@ class Footer extends React.Component {
     <footer className={this.props.location === "/" ? 'purple' : 'white'}>
     <ul>
         <li>Home</li>
-        <li>About Us</li>
-        <li>Contact Us</li>
-        <li>
-            Support
-        </li>
-        <li>Privacy Policy</li>
+        <li>Top Ambassadors</li>
+        <li>Support</li>
+        <li>Sign In</li>
     </ul>
     </footer>
     </div>

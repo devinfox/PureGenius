@@ -1,22 +1,24 @@
 import React, { Component } from 'react';
-import './BrandAmbassadorBanner.css';
+import './Carousel.css';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
 import { Button } from 'react-bootstrap';
 
-const BrandAmbassadorBanner = props => (
+const ReactCarousel = props => (
 
 <div className="homepageCarousel">
 
 <Carousel className="desktop" showArrows={false} showStatus={false} dynamicHeight={true} showIndicators={false} showThumbs={false}>
   <div>
-    <img src="https://i.imgur.com/hrmMYRh.jpg" />
+    <img src="https://i.imgur.com/bsWZHpH.jpg" />
+    <button className="legend">Start Playing</button>
   </div>
-  
 </Carousel>
+
 <Carousel className="mobile" showArrows={false} showStatus={false} dynamicHeight={true} showIndicators={false} showThumbs={false}>
-<div className="mobile">
-  <img src="https://i.imgur.com/MHOw13b.jpg" />
+  <div>
+    <img src="https://i.imgur.com/FoauCtQ.jpg" />
+    <button className="legend">Start Playing</button>
   </div>
 </Carousel>
 
@@ -24,19 +26,7 @@ const BrandAmbassadorBanner = props => (
 
 )
 
-export default BrandAmbassadorBanner;
-
-
-
-
-
-
-
-
-// import {Carousel} from 'react-bootstrap';
-// import Slider from 'react-animated-slider';
-
-// class BrandAmbassadorBanner extends React.Component {
+// class Controlled_carousel extends React.Component {
 //     constructor(props, context) {
 //       super(props, context);
   
@@ -61,24 +51,15 @@ export default BrandAmbassadorBanner;
   
 //       return (
     
-//         <div className="carouselContainer">
 //         <Carousel arrows={false} >
-       
-//         <img className="mobile" 
-//         src="https://i.imgur.com/rEn0iJ0.jpg"></img>
-        
-//         <img className="mobile" src="https://i.imgur.com/TSO42Gk.jpg"></img>
-        
+//         <img className="mobile" src="https://i.imgur.com/yaWrn2A.jpg"></img>
+//         <img className="desktop" src="https://i.imgur.com/9X8o9Qi.jpg"></img>
+
 //         </Carousel>
-//         </div>
-
        
-        
 //       );
-
-     
 //     }
 //   }
   
-//   export default BrandAmbassadorBanner;
+  export default ReactCarousel;
   

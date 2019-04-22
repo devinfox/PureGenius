@@ -37,7 +37,7 @@ const TopAmbassador = () => (
 		
 		
 		<Grid>
-        <h2 className="ambassadorHeader">Top Ambassadors</h2>
+        {/* <h2 className="ambassadorHeader">Top Ambassadors</h2> */}
 			{content.map((item, index) => (
 				<div
 					key={index}
@@ -66,6 +66,9 @@ const TopAmbassador = () => (
                         </p>
 
                         </div>
+                      
+                        <button type="button">View Profile</button>
+                
                         </Col>
                         </div>
                     `   
@@ -79,9 +82,7 @@ const TopAmbassador = () => (
 
                         </div>
 
-                        <div className="button">
-                        <button type="button">View Profile</button>
-                        </div>
+                        
 
 						</div>
 

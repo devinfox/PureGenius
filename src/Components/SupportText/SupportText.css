@@ -1,3 +1,7 @@
 .supporttext {
-    padding-top: 600px;
+    color: pink !important;
+}
+
+.supportPar {
+font-family: 'Montserrat', sans-serif;
 }

@@ -35,11 +35,29 @@ img {
     .desktop {
       display: none;
     }
+    .carousel .slide .legend {
+      color: black !important;
+      border-radius: 0 !important;
+      margin-left: -21% !important;
+      width: 40% !important;
+      bottom: 18% !important;
+      background: white !important;
+      border: 1px solid black;
+    }
+
+    .NavBar_navigation {
+      display: flex;
+      height: 100%;
+      align-items: center;
+      padding: 0 2rem;
+      
+  }
+
+
   }
 
   .carouselContainer {
       z-index: 5 !important;
-      position: relative;
   }
 
 

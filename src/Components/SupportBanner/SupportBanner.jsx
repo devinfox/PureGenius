@@ -1,50 +1,35 @@
 import React, { Component } from 'react';
-import {Carousel} from 'react-bootstrap';
-import Slider from 'react-animated-slider';
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Carousel } from 'react-responsive-carousel';
+import { Button } from 'react-bootstrap';
+import './SupportBanner.css';
 
-class SupportBanner extends React.Component {
-    constructor(props, context) {
-      super(props, context);
-  
-      this.handleSelect = this.handleSelect.bind(this);
-  
-      this.state = {
-        index: 0,
-        direction: null
-      };
-    }
-  
-    handleSelect(selectedIndex, e) {
-      
-      this.setState({
-        index: selectedIndex,
-        direction: e.direction
-      });
-    }
-  
-    render() {
-      const { index, direction } = this.state;
-  
-      return (
+
+const SupportBanner = props => (
+
+<div className="support-container">
+
+<div className="homepageCarousel">
+
+<Carousel className="desktop" showArrows={false} showStatus={false} dynamicHeight={true} showIndicators={false} showThumbs={false}>
+  <div>
+    <img src="https://i.imgur.com/m6BrcuB.jpg" />
     
-        <div className="carouselContainer">
-        <Carousel arrows={false} >
-       
-        <img className="mobile" 
-        src="https://i.imgur.com/cOinhYg.jpg"></img>
-        
-        <img className="desktop" src="https://i.imgur.com/m6BrcuB.jpg "></img>
-        
-        </Carousel>
-        </div>
-
-       
-        
-      );
-
-     
-    }
-  }
+  </div>
   
-  export default SupportBanner;
+</Carousel>
+<Carousel className="mobile" showArrows={false} showStatus={false} dynamicHeight={true} showIndicators={false} showThumbs={false}>
+<div className="mobile">
+  <img src="https://i.imgur.com/cOinhYg.jpg" />
+  </div>
+</Carousel>
+
+</div>
+</div>
+)
+
+export default SupportBanner;
+  
+
+
   
